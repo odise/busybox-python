@@ -1,6 +1,6 @@
 # busybox-python
 
-`Busybox 2014.11` container and rootfs builder for minimal Docker base images 
+`Busybox 1.22.1` (with `Buildroot 2014.11`) container and rootfs builder for minimal Docker base images 
 equipted with a staticly linked Python executable and easy_install.
 Additionally `curl-7.39.0` with SSL/TLS support is included.
 
