@@ -31,7 +31,7 @@ fi
 
 cd $1
 grep $(md5 rootfs.tar | awk '{ print $1 }') rootfs.tar.md5
-if $?; then
+if [ $? -eq 0 ]; then
     docker rm -f builder-$1 &&\
     docker rmi tarmaker:$1 &&\
     # We must wait until all removal is done before next step
