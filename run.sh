@@ -26,7 +26,7 @@ if [ $? -eq 0 ]; then
     docker rm -f builder-$MODULE && \
     docker rmi tarmaker:$MODULE && \
     # We must wait until all removal is done before next step
-    docker build -t odise/$MODULE:latest .
+    docker build -t odise/$MODULE:2015.02 .
 else
     echo "Checksum failed. Aborting."
     echo "Note: the tarmaker:$MODULE image and builder-$MODULE container have not been deleted."
