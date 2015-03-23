@@ -47,7 +47,7 @@ RUN             sed -i 's/BR2_PACKAGE_UCLIBC=y//' .config &&\
                 sed -i 's/BR2_TOOLCHAIN_BUILDROOT_LIBC=y//' .config &&\
                 echo BR2_TOOLCHAIN_USES_GLIBC=y >>.config &&\
                 echo BR2_TOOLCHAIN_BUILDROOT_GLIBC=y >>.config &&\
-                echo BR2_TOOLCHAIN_BUILDROOT_LIBC="glibc"
+                echo BR2_TOOLCHAIN_BUILDROOT_LIBC="glibc" >>.config
 
 # curl dependencies
 RUN             echo BR2_PACKAGE_LIBCURL=y >>.config &&\
